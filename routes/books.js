@@ -4,7 +4,8 @@ const Book = require("../models/book");
 const router = new express.Router();
 
 const { validate } = require("jsonschema");
-const bookSchemaNew = require("");
+const bookSchemaNew = require("../schemas/bookSchemaNew.json");
+const bookSchemaUpdate = require("../schemas/bookSchemaUpdate.json");
 
 /** GET / => {books: [book, ...]}  */
 
